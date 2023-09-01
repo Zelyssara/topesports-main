@@ -4,7 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
+
+<div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+        </label>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a>Juegos</a>
+            <ul class="p-2">
+              <li><a>League of lgd Legends</a></li>
+              <li><a>Starcraft II</a></li>
+              <li><a>Counter Strike</a></li>
+              <li><a>Valorant</a></li>
+              <li><a>Street Fighter 6</a></li>
+              <li><a>Fortnite</a></li>
+            </ul>
+          </li>
+          <li><a>FAQ</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost normal-case text-2xl" href="index.html">TopEsports</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+        
+      <ul class="menu menu-horizontal px-1 text-2xl">
+        <li><a href="index.html">Inicio</a></li>
+        <li tabindex="0">
+          <details>
+            <summary>Juegos</summary>
+            <ul class="p-2 z-50 text-sm">
+              <li><a>League of Legends</a></li>
+              <li><a>Starcraft II</a></li>
+              <li><a>Counter Strike</a></li>
+              <li><a>Valorant</a></li>
+              <li><a>Street Fighter 6</a></li>
+              <li><a>Fortnite</a></li>
+            </ul>
+          </details>
+        </li>
+        <li><a>FAQ</li>
+      </ul>
+    </div>
+    
+    <div class="navbar-end">
+
+        <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10">
+                <img src="https://introvertspring.com/wp-content/uploads/2016/06/Michaela-round-png.png" class="rounded-full" />
+              </div>
+            </label>
+            <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+      <a class="btn">Comenzar</a>
+    
+    </div>
+  </div>
+
+
+</nav>
+
+<div class="carousel w-full">
+    <div id="slide1" class="carousel-item relative w-full">
+      <img src="https://images3.alphacoders.com/132/thumb-1920-1327236.jpeg" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle">❮</a> 
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="https://a-static.besthdwallpaper.com/porcelain-champion-skin-league-of-legends-lol-wallpaper-1920x1200-94715_6.jpg" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a> 
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="https://pbs.twimg.com/media/FnQirqKXEAUjPDu?format=jpg&name=4096x4096" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle">❮</a> 
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide4" class="carousel-item relative w-full">
+      <img src="https://images3.alphacoders.com/132/1325236.jpeg" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle">❮</a> 
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+
+
 <body>
     
 </body>
