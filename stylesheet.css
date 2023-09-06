@@ -15,11 +15,6 @@ h1{
 
 }
 
-.statss{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 p {
     font-size: 20px;
