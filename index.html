@@ -9,6 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 
 
@@ -36,11 +37,11 @@
         <li><a>FAQ</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost normal-case text-2xl" href="index.html">TopEsports</a>
+    <a class="btn btn-ghost normal-case text-2xl text-purple-400" href="index.html">TopEsports</a>
   </div>
   <div class="navbar-center hidden lg:flex">
 
-    <ul class="menu menu-horizontal px-1 text-2xl">
+    <ul class="menu menu-horizontal px-1 text-2xl text-red-300">
       <li><a href="index.html">Inicio</a></li>
       <li tabindex="0">
         <details>
@@ -55,7 +56,7 @@
           </ul>
         </details>
       </li>
-      <li><a>FAQ</li>
+      <li><a href="#faq">FAQ</a></li>
     </ul>
   </div>
 
@@ -68,18 +69,19 @@
             class="rounded-full" />
         </div>
       </label>
-      <ul tabindex="0" class="mt-3 z-50 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+      <ul tabindex="0"
+        class="mt-3 z-50 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 text-red-300">
         <li>
-          <a class="justify-between">
+          <a class="justify-between" href="started.html">
             Profile
-            <span class="badge">New</span>
+            <span class="badge text-red-300">New</span>
           </a>
         </li>
-        <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+        <li><a href="started.html">Settings</a></li>
+        <li><a href="started.html">Logout</a></li>
       </ul>
     </div>
-    <a class="btn">Comenzar</a>
+    <a class="btn text-purple-400" href="started.html">Comenzar</a>
 
   </div>
 </div>
@@ -186,7 +188,20 @@
       </div>
       <div class="stat-title">Jugadores Online</div>
       <div class="stat-value text-secondary">3.7M</div>
-      <div class="stat-desc">21% more than last month</div>
+      <div class="stat-desc">21% más que el mes pasado</div>
+    </div>
+
+    <div class="stat">
+      <div class="stat-figure text-secondary">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          class="inline-block w-8 h-8 stroke-current">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+        </svg>
+      </div>
+      <div class="stat-title">Jugadores Esports</div>
+      <div class="stat-value text-primary">18,220</div>
+      <div class="stat-desc">2022</div>
     </div>
 
 
@@ -198,46 +213,12 @@
           </path>
         </svg>
       </div>
-      <div class="stat-title">New Users</div>
-      <div class="stat-value">4,200</div>
-      <div class="stat-desc">↗︎ 400 (22%)</div>
+      <div class="stat-title">Gamers</div>
+      <div class="stat-value text-secondary">3.09B</div>
+      <div class="stat-desc">↗︎ 130M (4.21%)</div>
     </div>
 
-    <div class="stat">
-      <div class="stat-figure text-secondary">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="grid w-8 h-8 stroke-current">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
-        </svg>
-      </div>
-      <div class="stat-title">New Registers</div>
-      <div class="stat-value">1,200</div>
-      <div class="stat-desc">↘︎ 90 (14%)</div>
-    </div>
 
-    <div class="stat">
-      <div class="stat-figure text-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="grid w-8 h-8 stroke-current">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
-          </path>
-        </svg>
-      </div>
-      <div class="stat-title">Jugadores Activos</div>
-      <div class="stat-value text-primary">515M</div>
-      <div class="stat-desc">Jugadores recurrentes totales</div>
-    </div>
-
-    <div class="stat">
-      <div class="stat-figure text-secondary">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="grid w-8 h-8 stroke-current">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-        </svg>
-      </div>
-      <div class="stat-title">Jugadores Online</div>
-      <div class="stat-value text-secondary">3.7M</div>
-      <div class="stat-desc">21% more than last month</div>
-    </div>
 
 
 
@@ -253,21 +234,22 @@
     <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
       <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Top
         Esports</h1>
-      <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Here at Flowbite we focus on
-        markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+      <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Contamos con la información más
+        actual referente a los Esports de diferentes juegos, brindando así relevancia para que te adentres al mundo de
+        los Esports.</p>
       <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-        <a href="#"
+        <a href="started.html"
           class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-          Get started
+          Comenzar
           <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M1 5h12m0 0L9 1m4 4L9 9" />
           </svg>
         </a>
-        <a href="#"
+        <a href="#faq"
           class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-          Learn more
+          FAQ
         </a>
       </div>
     </div>
@@ -276,21 +258,18 @@
   <section class="flex flex-wrap w-screen">
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img class="rounded-t-lg"
-          src="https://s.yimg.com/uu/api/res/1.2/dEzGhndCHaLCnUMD_zBcxw--~B/aD0xMTU4O3c9MTgwMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2021-01/cdcf03a0-4e92-11eb-afdf-ffae59fc8055.cf.jpg"
-          alt="" />
+      <a href="leagueoflegends.html">
+        <img class="rounded-t-lg" src="https://images2.alphacoders.com/132/1324119.jpeg" alt="" />
       </a>
       <div class="p-5">
-        <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-            acquisitions 2021</h5>
+        <a href="leagueoflegends.html">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">League of Legends</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-          acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#"
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Con más de 10 años de competencias en linea, este
+          juego se ha convertido en un clásico de los Esports.</p>
+        <a href="leagueoflegends.html"
           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-          Read more
+          Conoce más
           <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -303,20 +282,18 @@
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img class="rounded-t-lg" src="https://www.slantmagazine.com/wp-content/uploads/2010/08/starcraftii.jpg"
-          alt="" />
+      <a href="starcraftii.html">
+        <img class="rounded-t-lg" src="https://images4.alphacoders.com/112/112444.jpg" alt="" />
       </a>
       <div class="p-5">
-        <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-            acquisitions 2021</h5>
+        <a href="starcraftii.html">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Starcraft II</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-          acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#"
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Desde su primera entrega ha estado siempre en la
+          mira de los jugadores como un Esport referente, pero últimamente se ha complicado un poco sus ligas.</p>
+        <a href="starcraftii.html"
           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-          Read more
+          Conoce más
           <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -327,20 +304,18 @@
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img class="rounded-t-lg"
-          src="https://3.bp.blogspot.com/-VBtLYBdBygs/UMKzWH1WVlI/AAAAAAAABxg/VbPthxNoKD0/s1600/csgo.jpg" alt="" />
+      <a href="counterstrike.html">
+        <img class="rounded-t-lg" src="https://images.alphacoders.com/570/570389.jpg" alt="" />
       </a>
       <div class="p-5">
-        <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-            acquisitions 2021</h5>
+        <a href="counterstrike.html">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CS:GO</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-          acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#"
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Si bien no ha sido el primer shooter en ser un
+          Esport, este se convirtió en el más popular durante mucho tiempo.</p>
+        <a href="counterstrike.html"
           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-          Read more
+          Conoce más
           <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -351,21 +326,18 @@
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img class="rounded-t-lg"
-          src="https://static1-es.millenium.gg/articles/3/52/53/3/@/292345-pack-skins-valorant-arcade-article_image_t-2.png"
-          alt="" />
+      <a href="valorant.html">
+        <img class="rounded-t-lg" src="https://images.alphacoders.com/131/1319335.jpeg" alt="" />
       </a>
       <div class="p-5">
-        <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-            acquisitions 2021</h5>
+        <a href="valorant.html">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Valorant</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-          acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#"
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Riot Games sacó su propio shooter y si bien tiene
+          las bases del Counter Strike, las habilidades que puedes usar cambian el juego completamente.</p>
+        <a href="valorant.html"
           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-          Read more
+          Conoce más
           <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -376,21 +348,21 @@
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
+      <a href="streetfighter.html">
         <img class="rounded-t-lg"
           src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2023/3/31/lxx7adg4j2yaymscur0t/street-fighter-6-fighter-artwork"
           alt="" />
       </a>
       <div class="p-5">
-        <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-            acquisitions 2021</h5>
+        <a href="streetfighter.html">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Street Fighter 6</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-          acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#"
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Este juego de peleas ya en su sexta entrega ha sido
+          la gran sorpresa para la FGC, con más de 7000+ jugadores participando en la última
+          edición de Evo 2023.</p>
+        <a href="streetfighter.html"
           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-          Read more
+          Conoce más
           <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -401,21 +373,20 @@
     </div>
 
     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
+      <a href="fortnite.html">
         <img class="rounded-t-lg"
           src="https://assetsio.reedpopcdn.com/fortnite-6-battle-pass-header.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp"
           alt="" />
       </a>
       <div class="p-5">
-        <a href="#">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology
-            acquisitions 2021</h5>
+        <a href="fortnite.html">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Fortnite</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-          acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#"
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">El juego con más jugadores activos actualmente sin
+          duda tiene mucho de qué hablar.</p>
+        <a href="fortnite.html"
           class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-          Read more
+          Conoce más
           <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
             viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -424,6 +395,8 @@
         </a>
       </div>
     </div>
+
+
 
   </section>
 
@@ -431,40 +404,105 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
+
+
+
+
+
 </body>
+
+
+
+<div class="bg-gray-900" id="faq">
+  <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
+    <h2 class="text-2xl font-bold leading-10 tracking-tight text-purple-400">Frequently asked questions</h2>
+    <p class="mt-6 max-w-2xl text-base leading-7 text-gray-300">Tienes una pregunta que no se responda debajo? <a
+        href="#" class="font-semibold text-indigo-400 hover:text-indigo-300">mándanos un correo</a> y te responderemos a
+      la brevedad.</p>
+    <div class="mt-20">
+      <dl class="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:gap-x-10">
+        <div>
+          <dt class="text-base font-semibold leading-7 text-purple-400">Qué son los Esports?</dt>
+          <dd class="mt-2 text-base leading-7 text-gray-300">Los deportes electrónico o Esports son competencias
+            presenciales o en linea donde los jugadores compiten en una liga o torneo para ganar dinero.</dd>
+        </div>
+
+        <!-- More questions... -->
+        <div>
+          <dt class="text-base font-semibold leading-7 text-purple-400">Cuántos Esports hay?</dt>
+          <dd class="mt-2 text-base leading-7 text-gray-300">Actualmente en la página se cuenta con la información de 6
+            juegos, pero en total han existido 56 juegos en estas competencias.</dd>
+        </div>
+        <div>
+          <dt class="text-base font-semibold leading-7 text-purple-400">Cómo puedo encontrar un juego en el que sea
+            bueno?
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-gray-300">La recomendación es que lo juegues si te llama la
+            atención, si te gusta empezar a practicar y participar en torneos locales o regionales.</dd>
+        </div>
+        <div>
+          <dt class="text-base font-semibold leading-7 text-purple-400">Me gusta otro juego, pero no está agregado aquí
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-gray-300">Con el tiempo se irán añadiendo juegos a la página.</dd>
+        </div>
+        <div>
+          <dt class="text-base font-semibold leading-7 text-purple-400">Cuál es la finalidad de esta página web?</dt>
+          <dd class="mt-2 text-base leading-7 text-gray-300">Amamos los Esports, así que a final del día es proveer
+            información importante y relevante sobre cada juego.</dd>
+        </div>
+        <div>
+          <dt class="text-base font-semibold leading-7 text-purple-400">Qué tan actualizada está la página?
+          </dt>
+          <dd class="mt-2 text-base leading-7 text-gray-300">Usamos los datos más actuales semana con semana.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+
+
 
 <footer class="footer p-10 bg-base-200 text-base-content">
   <div>
 
-    <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-      clip-rule="evenodd" class="fill-current">
-      <path
-        d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
-      </path>
-    </svg>
-    <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+    <img class="mask mask-squircle object-contain h-98 w-16"
+      src="https://scontent.fcuu1-1.fna.fbcdn.net/v/t34.18173-12/25394346_820939668109420_180119050_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=dGL5BAs_X2oAX9IiZ6d&_nc_ht=scontent.fcuu1-1.fna&oh=00_AfBkvrMeo7Gzo8apiVzG7nIGxITrkgVbdMt2iCKMPA1ZzA&oe=64FB45F0">
+
+    <p class="text-purple-400">Industrias HOLYSTREAM S.A. de C.V.<br />Trayendo sólo lo mejor desde 1991</p>
   </div>
   <div>
-    <span class="footer-title">Servicios</span>
-    <a class="link link-hover">Branding</a>
-    <a class="link link-hover">Design</a>
-    <a class="link link-hover">Marketing</a>
-    <a class="link link-hover">Advertisement</a>
+    <span class="footer-title text-red-300">Servicios</span>
+    <a class="link link-hover text-purple-400">Branding</a>
+    <a class="link link-hover text-purple-400">Design</a>
+    <a class="link link-hover text-purple-400">Marketing</a>
+    <a class="link link-hover text-purple-400">Advertisement</a>
   </div>
   <div>
-    <span class="footer-title">Compañia</span>
-    <a class="link link-hover">About us</a>
-    <a class="link link-hover">Contact</a>
-    <a class="link link-hover">Jobs</a>
-    <a class="link link-hover">Press kit</a>
+    <span class="footer-title text-red-300">Compañia</span>
+    <a class="link link-hover text-purple-400">Acerca de</a>
+    <a class="link link-hover text-purple-400">Contacto</a>
+    <a class="link link-hover text-purple-400">Trabajos</a>
+    <a class="link link-hover text-purple-400">Press kit</a>
   </div>
   <div>
-    <span class="footer-title">Legal</span>
-    <a class="link link-hover">Terms of use</a>
-    <a class="link link-hover">Privacy policy</a>
-    <a class="link link-hover">Cookie policy</a>
+    <span class="footer-title text-red-300">Legal</span>
+    <a class="link link-hover text-purple-400">Terminos y Condiciones</a>
+    <a class="link link-hover text-purple-400">Politica de privacidad</a>
+    <a class="link link-hover text-purple-400">Politica de cookies</a>
   </div>
 </footer>
 
